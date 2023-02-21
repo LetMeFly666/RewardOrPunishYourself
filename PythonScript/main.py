@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-11-05 17:03:06
 LastEditors: LetMeFly
-LastEditTime: 2022-11-05 20:03:13
+LastEditTime: 2023-02-21 21:54:23
 '''
 import sqlite3
 import time
@@ -85,7 +85,7 @@ Example:
                     if not timeInputed:
                         break
                     try:
-                        when = time.strftime("%Y-%m-%d %H:%M:%S", time.strptime("2022-10-12 12:0:9", "%Y-%m-%d %H:%M:%S"))
+                        when = time.strftime("%Y-%m-%d %H:%M:%S", time.strptime(timeInputed, "%Y-%m-%d %H:%M:%S"))
                         break
                     except:
                         print("Error format, or you can just input the Enter for now.")
